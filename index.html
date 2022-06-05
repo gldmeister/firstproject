@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>New Project</title>
+</head>
+
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none">
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm0,96c-43.453,0 -48.902,0.184 -65.968,0.963c-17.03,0.777 -28.661,3.482 -38.839,7.437c-10.521,4.089 -19.444,9.56 -28.339,18.455c-8.895,8.895 -14.366,17.818 -18.455,28.339c-3.955,10.177 -6.659,21.808 -7.437,38.838c-0.778,17.066 -0.962,22.515 -0.962,65.968c0,43.453 0.184,48.902 0.962,65.968c0.778,17.03 3.482,28.661 7.437,38.838c4.089,10.521 9.56,19.444 18.455,28.34c8.895,8.895 17.818,14.366 28.339,18.455c10.178,3.954 21.809,6.659 38.839,7.436c17.066,0.779 22.515,0.963 65.968,0.963c43.453,0 48.902,-0.184 65.968,-0.963c17.03,-0.777 28.661,-3.482 38.838,-7.436c10.521,-4.089 19.444,-9.56 28.34,-18.455c8.895,-8.896 14.366,-17.819 18.455,-28.34c3.954,-10.177 6.659,-21.808 7.436,-38.838c0.779,-17.066 0.963,-22.515 0.963,-65.968c0,-43.453 -0.184,-48.902 -0.963,-65.968c-0.777,-17.03 -3.482,-28.661 -7.436,-38.838c-4.089,-10.521 -9.56,-19.444 -18.455,-28.339c-8.896,-8.895 -17.819,-14.366 -28.34,-18.455c-10.177,-3.955 -21.808,-6.66 -38.838,-7.437c-17.066,-0.779 -22.515,-0.963 -65.968,-0.963Zm0,28.829c42.722,0 47.782,0.163 64.654,0.933c15.6,0.712 24.071,3.318 29.709,5.509c7.469,2.902 12.799,6.37 18.397,11.969c5.6,5.598 9.067,10.929 11.969,18.397c2.191,5.638 4.798,14.109 5.509,29.709c0.77,16.872 0.933,21.932 0.933,64.654c0,42.722 -0.163,47.782 -0.933,64.654c-0.711,15.6 -3.318,24.071 -5.509,29.709c-2.902,7.469 -6.369,12.799 -11.969,18.397c-5.598,5.6 -10.928,9.067 -18.397,11.969c-5.638,2.191 -14.109,4.798 -29.709,5.509c-16.869,0.77 -21.929,0.933 -64.654,0.933c-42.725,0 -47.784,-0.163 -64.654,-0.933c-15.6,-0.711 -24.071,-3.318 -29.709,-5.509c-7.469,-2.902 -12.799,-6.369 -18.398,-11.969c-5.599,-5.598 -9.066,-10.928 -11.968,-18.397c-2.191,-5.638 -4.798,-14.109 -5.51,-29.709c-0.77,-16.872 -0.932,-21.932 -0.932,-64.654c0,-42.722 0.162,-47.782 0.932,-64.654c0.712,-15.6 3.319,-24.071 5.51,-29.709c2.902,-7.468 6.369,-12.799 11.968,-18.397c5.599,-5.599 10.929,-9.067 18.398,-11.969c5.638,-2.191 14.109,-4.797 29.709,-5.509c16.872,-0.77 21.932,-0.933 64.654,-0.933Zm0,49.009c-45.377,0 -82.162,36.785 -82.162,82.162c0,45.377 36.785,82.162 82.162,82.162c45.377,0 82.162,-36.785 82.162,-82.162c0,-45.377 -36.785,-82.162 -82.162,-82.162Zm0,135.495c-29.455,0 -53.333,-23.878 -53.333,-53.333c0,-29.455 23.878,-53.333 53.333,-53.333c29.455,0 53.333,23.878 53.333,53.333c0,29.455 -23.878,53.333 -53.333,53.333Zm104.609,-138.741c0,10.604 -8.597,19.199 -19.201,19.199c-10.603,0 -19.199,-8.595 -19.199,-19.199c0,-10.604 8.596,-19.2 19.199,-19.2c10.604,0 19.201,8.596 19.201,19.2Z"/>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path d="M255.022,511.998l0.229,0.001l-0.079,0l-0.15,-0.001Zm1.806,0.001l-0.079,0l0.229,-0.001l-0.15,0.001Zm-2.588,-0.005l0.247,0.001l-0.142,0l-0.105,-0.001Zm3.415,0.001l-0.142,0l0.247,-0.001l-0.105,0.001Zm-4.169,-0.007l0.165,0.001l-0.132,-0.001l-0.033,0Zm4.995,0l-0.132,0.001l0.165,-0.001l-0.033,0Zm0.826,-0.009l-0.058,0.001l0.223,-0.003l-0.165,0.002Zm-6.779,-0.002l0.223,0.003l-0.058,-0.001l-0.165,-0.002Zm7.604,-0.01l-0.135,0.002l0.275,-0.004l-0.14,0.002Zm-8.404,-0.002l0.275,0.004l-0.135,-0.002l-0.14,-0.002Zm9.228,-0.012l-0.182,0.003l0.254,-0.005l-0.072,0.002Zm-9.984,-0.002l0.254,0.005l-0.182,-0.003l-0.072,-0.002Zm-0.937,-0.019l0.225,0.005l-0.04,-0.001l-0.185,-0.004Zm11.745,0.004l-0.04,0.001l0.225,-0.005l-0.185,0.004Zm-12.567,-0.025l0.309,0.008l-0.125,-0.003l-0.184,-0.005Zm13.39,0.005l-0.125,0.003l0.309,-0.008l-0.184,0.005Zm0.823,-0.022l-0.201,0.006l0.316,-0.009l-0.115,0.003Zm-14.967,-0.003l0.316,0.009l-0.201,-0.006l-0.115,-0.003Zm-0.72,-0.022l0.225,0.007l-0.212,-0.007l-0.194,-0.006l0.181,0.006Zm16.509,0l-0.212,0.007l0.225,-0.007l0.181,-0.006l-0.194,0.006Zm0.821,-0.027l-0.112,0.004l0.345,-0.012l-0.233,0.008Zm-18.371,-0.008l0.345,0.012l-0.112,-0.004l-0.233,-0.008Zm-0.749,-0.028l0.362,0.013l-0.201,-0.007l-0.161,-0.006Zm19.941,0.006l-0.201,0.007l0.362,-0.013l-0.161,0.006Zm-20.676,-0.036l0.354,0.015l-0.277,-0.011l-0.077,-0.004Zm21.495,0.004l-0.277,0.011l0.354,-0.015l-0.077,0.004Zm-22.525,-0.049l0.38,0.017l-0.093,-0.003l-0.287,-0.014Zm23.345,0.014l-0.093,0.003l0.38,-0.017l-0.287,0.014Zm-24.084,-0.048l0.394,0.018l-0.186,-0.008l-0.208,-0.01Zm24.902,0.01l-0.186,0.008l0.394,-0.018l-0.208,0.01Zm-25.63,-0.047l0.397,0.02l-0.279,-0.013l-0.118,-0.007Zm26.448,0.007l-0.279,0.013l0.397,-0.02l-0.118,0.007Zm0.818,-0.043l-0.362,0.019l0.321,-0.017l0.378,-0.021l-0.337,0.019Zm-27.925,0.002l0.321,0.017l-0.362,-0.019l-0.337,-0.019l0.378,0.021Zm28.741,-0.048l-0.16,0.009l0.406,-0.023l-0.246,0.014Zm-29.844,-0.014l0.406,0.023l-0.16,-0.009l-0.246,-0.014Zm-0.722,-0.043l0.405,0.024l-0.253,-0.014l-0.152,-0.01Zm31.382,0.01l-0.253,0.014l0.405,-0.024l-0.152,0.01Zm-32.071,-0.053l0.365,0.023l-0.34,-0.021l-0.342,-0.022l0.317,0.02Zm32.887,0.002l-0.34,0.021l0.365,-0.023l0.317,-0.02l-0.342,0.022Zm0.814,-0.053l-0.122,0.008l0.387,-0.026l-0.265,0.018Zm-34.755,-0.018l0.387,0.026l-0.122,-0.008l-0.265,-0.018Zm-0.721,-0.05l0.38,0.027l-0.208,-0.014l-0.172,-0.013Zm36.29,0.013l-0.208,0.014l0.38,-0.027l-0.172,0.013Zm-37.009,-0.064l0.349,0.025l-0.271,-0.019l-0.078,-0.006Zm37.822,0.006l-0.271,0.019l0.349,-0.025l-0.078,0.006Zm-38.789,-0.079l0.306,0.023l-0.074,-0.005l-0.232,-0.018Zm39.602,0.018l-0.074,0.005l0.306,-0.023l-0.232,0.018Zm0.811,-0.063l-0.146,0.011l0.311,-0.025l-0.165,0.014Zm-41.157,-0.014l0.311,0.025l-0.146,-0.011l-0.165,-0.014Zm-0.725,-0.059l0.264,0.022l-0.186,-0.015l-0.078,-0.007Zm42.694,0.007l-0.186,0.015l0.264,-0.022l-0.078,0.007Zm-43.492,-0.074l0.079,0.007l-0.013,-0.001l-0.066,-0.006Zm44.302,0.006l-0.013,0.001l0.079,-0.007l-0.066,0.006Zm0.81,-0.071l-0.072,0.006l0.181,-0.016l-0.109,0.01Zm-45.965,-0.01l0.181,0.016l-0.072,-0.006l-0.109,-0.01Zm-0.75,-0.068l0.135,0.013l-0.084,-0.008l-0.051,-0.005Zm47.523,0.005l-0.084,0.008l0.135,-0.013l-0.051,0.005Zm-63.736,-2.025c-122.319,-19.226 -216,-125.203 -216,-252.887c0,-141.29 114.71,-256 256,-256c141.29,0 256,114.71 256,256c0,127.684 -93.681,233.661 -216,252.887l0,-178.887l59.65,0l11.35,-74l-71,0l0,-48.021c0,-20.245 9.918,-39.979 41.719,-39.979l32.281,0l0,-63c0,0 -29.296,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.887Z"/>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm-45.091,392.158c113.283,0 175.224,-93.87 175.224,-175.223c0,-2.682 0,-5.364 -0.128,-7.919c12.005,-8.684 22.478,-19.54 30.779,-31.928c-10.983,4.853 -22.861,8.174 -35.377,9.706c12.772,-7.663 22.478,-19.668 27.076,-34.099c-11.878,7.024 -25.032,12.132 -39.081,14.942c-11.239,-12.005 -27.203,-19.412 -44.955,-19.412c-33.972,0 -61.558,27.586 -61.558,61.558c0,4.853 0.511,9.578 1.66,14.048c-51.213,-2.554 -96.552,-27.075 -126.947,-64.368c-5.237,9.068 -8.302,19.668 -8.302,30.907c0,21.328 10.856,40.23 27.459,51.213c-10.09,-0.255 -19.541,-3.065 -27.842,-7.662l0,0.766c0,29.885 21.2,54.661 49.425,60.409c-5.108,1.404 -10.6,2.171 -16.219,2.171c-3.96,0 -7.791,-0.383 -11.622,-1.15c7.79,24.521 30.523,42.274 57.471,42.784c-21.073,16.476 -47.637,26.31 -76.501,26.31c-4.981,0 -9.834,-0.256 -14.687,-0.894c26.948,17.624 59.387,27.841 94.125,27.841Z"/>
+        </symbol>
+        <symbol id="whatsapp" viewBox="0 0 512 512">
+            <path d="M256,0c141.29,0 256,114.71 256,256c0,141.29 -114.71,256 -256,256c-141.29,0 -256,-114.71 -256,-256c0,-141.29 114.71,-256 256,-256Zm121.527,134.844c-30.646,-30.672 -71.401,-47.571 -114.822,-47.588c-89.468,0 -162.284,72.788 -162.319,162.256c-0.012,28.599 7.462,56.516 21.666,81.122l-23.028,84.086l86.048,-22.564c23.708,12.927 50.401,19.739 77.568,19.751l0.067,0c89.459,0 162.281,-72.797 162.317,-162.266c0.017,-43.358 -16.851,-84.127 -47.497,-114.797Zm-114.821,249.657l-0.054,0c-24.209,-0.01 -47.953,-6.511 -68.667,-18.799l-4.927,-2.924l-51.061,13.391l13.629,-49.769l-3.208,-5.102c-13.505,-21.473 -20.637,-46.293 -20.627,-71.776c0.03,-74.362 60.552,-134.861 134.969,-134.861c36.035,0.014 69.908,14.062 95.38,39.554c25.472,25.493 39.492,59.379 39.478,95.416c-0.03,74.367 -60.551,134.869 -134.912,134.87Zm74.003,-101.01c-4.056,-2.029 -23.996,-11.838 -27.715,-13.191c-3.717,-1.353 -6.42,-2.03 -9.124,2.029c-2.704,4.059 -10.477,13.192 -12.843,15.898c-2.365,2.705 -4.731,3.045 -8.787,1.014c-4.056,-2.028 -17.124,-6.31 -32.615,-20.124c-12.057,-10.75 -20.197,-24.029 -22.563,-28.087c-2.365,-4.059 -0.252,-6.253 1.779,-8.275c1.824,-1.816 4.055,-4.735 6.083,-7.103c2.028,-2.368 2.704,-4.059 4.056,-6.764c1.352,-2.707 0.676,-5.074 -0.338,-7.104c-1.014,-2.029 -9.125,-21.986 -12.505,-30.104c-3.291,-7.906 -6.635,-6.836 -9.125,-6.96c-2.363,-0.118 -5.069,-0.143 -7.773,-0.143c-2.704,0 -7.097,1.015 -10.816,5.074c-3.717,4.059 -14.194,13.868 -14.194,33.824c0,19.957 14.533,39.236 16.561,41.943c2.028,2.706 28.599,43.659 69.284,61.221c9.676,4.177 17.231,6.672 23.121,8.541c9.716,3.085 18.557,2.65 25.546,1.606c7.792,-1.164 23.996,-9.809 27.375,-19.279c3.379,-9.471 3.379,-17.589 2.366,-19.28c-1.014,-1.691 -3.718,-2.706 -7.773,-4.736Z"/>
+        </symbol>
+        <symbol id="search" viewBox="0 0 32 32">
+            <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"/>
+        </symbol>
+        <symbol id="message" viewBox="0 0 32 32">
+            <path clip-rule="evenodd" d="M21.6472 3.23763C21.931 3.47854 22.0575 3.85714 21.9755 4.22025L18.4755 19.7202C18.3991 20.0583 18.1532 20.3327 17.8255 20.4455C17.4978 20.5583 17.135 20.4934 16.8668 20.2739L12.293 16.5318L10.3742 19.9856C10.1778 20.3392 9.7877 20.5396 9.38588 20.4934C8.98406 20.4473 8.64962 20.1636 8.5385 19.7747L6.70601 13.361L2.30391 12.4806C1.87081 12.3939 1.54584 12.0335 1.50443 11.5937C1.46303 11.154 1.71501 10.7392 2.12432 10.5732L20.6243 3.07325C20.9693 2.93339 21.3634 2.99673 21.6472 3.23763ZM5.96689 11.1736L7.69614 11.5194C8.06331 11.5928 8.35869 11.8652 8.46155 12.2253L9.79832 16.9039L11.1259 14.5143C11.2698 14.2553 11.5211 14.0735 11.8122 14.0178C12.1032 13.9621 12.4039 14.0384 12.6333 14.226L16.881 17.7014L19.6033 5.64526L5.96689 11.1736Z"/>
+            <path clip-rule="evenodd" d="M21.5328 4.84623C21.9713 4.57019 22.1263 4.00502 21.89 3.54396C21.6537 3.08289 21.1044 2.87861 20.6243 3.07326L2.12432 10.5733C1.71501 10.7392 1.46303 11.154 1.50443 11.5937C1.54584 12.0335 1.87081 12.394 2.30391 12.4806L7.30391 13.4806C7.55513 13.5308 7.81604 13.4827 8.03284 13.3462L21.5328 4.84623Z"/>
+            <path clip-rule="evenodd" d="M21.9755 4.22026C22.0776 3.76787 21.8553 3.30461 21.4385 3.10126C21.0217 2.8979 20.5198 3.00782 20.2261 3.36676L11.2261 14.3668C10.8763 14.7942 10.9393 15.4242 11.3668 15.774L16.8668 20.274C17.135 20.4934 17.4978 20.5584 17.8255 20.4456C18.1532 20.3328 18.3991 20.0583 18.4755 19.7203L21.9755 4.22026Z"/>
+        </symbol>
+    </svg>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container"> <!-- CONTAINER -->
+
+            <a href="" class="header-logo">
+                <img src="icons/newproject_logo.png" alt="logo">
+            </a>
+
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <form action="" class="form-search">
+                <input class="search" type="search" placeholder="Search..."></input>
+                <button class="search-button" type="submit"><svg class="search-icon"><use xlink:href="#search"></use></svg></button>
+            </form>
+
+        </div> <!-- CONTAINER -->
+    </header>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <section class="contact"> <!-- SECTION CONTACT -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="contact-content">
+                    <p class="contact-content-title">First I wanted to be a veterinarian</p>
+                    <p class="contact-content-text">Lorem Ipsum available but the majority have
+                    suffered alteration in some form, by injected humour randomised words.</p>
+                    <div class="contact-btns">
+                        <button class="contact-btns-item">Contact Us</button>
+                        <button class="contact-btns-item">Our Service</button>
+                    </div>
+                </div>
+
+                <img src="images/contact/newproject_dog.png" alt="" class="contact-img">
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION CONTACT -->
+
+        <section class="service"> <!-- SECTION SERVICE -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="service-contentleft">
+                    <p class="service-contentleft-title">As a veterinarian and lover of animals.</p>
+                    <p class="service-contentleft-text">Lorem Ipsum available but the majority have
+                    suffered alteration in some form, by injected humour randomised words.</p>
+                    <button class="service-btn">Our Service</button>
+                </div>
+
+                <div class="service-contentright">
+                    <div class="orange-square"></div>
+                    <div class="service-photo">
+                        <div class="opacity-square"></div>
+                        <button class="service-btn-play">
+                            <img src="icons/instruments/newproject_icon_arrowright.png" alt="" class="btn-play-icon">
+                        </button>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION SERVICE -->
+
+        <section class="waiting"> <!-- SECTION WAITING -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="waiting-information">
+                    <h1 class="waiting-title">Title Here</h1>
+                    <h2 class="waiting-text">Lorem Ipsum available, but the majority have suffered alteration in some form.</h2>
+                </div>
+
+                <div class="waiting-content">
+                    <div class="waiting-content-item">
+                        <img src="images/waiting/newproject_waiting1.jpg" alt="newproject_waiting1.jpg" class="waiting-img">
+                        <div class="waiting-content-item-description">
+                            <h4 class="waiting-content-item-description-title">Veterinarian</h4>
+                            <p class="waiting-content-item-description-text">Lorem Ipsum available, but
+                                the majority have suffered alteration in some.</p>
+                        </div>
+                    </div>
+
+                    <div class="waiting-content-item">
+                        <img src="images/waiting/newproject_waiting2.jpg" alt="newproject_waiting2.jpg" class="waiting-img">
+                        <div class="waiting-content-item-description">
+                            <h4 class="waiting-content-item-description-title">Vaccination Care</h4>
+                            <p class="waiting-content-item-description-text">Lorem Ipsum available, but
+                                the majority have suffered alteration in some.</p>
+                        </div>
+                    </div>
+
+                    <div class="waiting-content-item">
+                        <img src="images/waiting/newproject_waiting3.jpg" alt="newprject_waiting3.jpg" class="waiting-img">
+                        <div class="waiting-content-item-description">
+                            <h4 class="waiting-content-item-description-title">Dental Care</h4>
+                            <p class="waiting-content-item-description-text">Lorem Ipsum available, but
+                                the majority have suffered alteration in some.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION WAITING -->
+
+        <section class="check"> <!-- SECTION CHECK -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="check-contentleft">
+                    <div class="orange-square"></div>
+                    <div class="check-photo">
+                        <div class="opacity-square"></div>
+                        <button class="check-btn-play">
+                            <img src="icons/instruments/newproject_icon_arrowright.png" alt="" class="btn-play-icon">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="check-contentright">
+                    <p class="check-contentright-title">As a veterinarian and lover of animals.</p>
+                    <p class="check-contentright-text">Lorem Ipsum available but the majority have
+                    suffered alteration in some form, by injected humour randomised words.</p>
+                    <button class="check-btn">Our Service</button>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION CHECK -->
+
+
+        <section class="doglist"> <!-- SECTION DOGLIST -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="doglist-information">
+                    <h1 class="doglist-title">Title Here</h1>
+                    <h2 class="doglist-text">Lorem Ipsum available, but the majority have suffered alteration in some form.</h2>
+                </div>
+
+                <div class="doglist-content">
+                    <div class="doglist-content-item">
+                        <img src="images/doglist/newproject_doglist1.jpg" alt="newproject_doglist1.jpg" class="doglist-img">
+                        <div class="doglist-prices">
+                            <p class="doglist-prices-old">$50</p>
+                            <p class="doglist-prices-real">$30</p>
+                        </div>
+                        <button class="doglist-button-buy">Buy Now</button>
+                    </div>
+
+                    <div class="doglist-content-item">
+                        <img src="images/doglist/newproject_doglist2.jpg" alt="newproject_doglist2.jpg" class="doglist-img">
+                        <div class="doglist-prices">
+                            <p class="doglist-prices-old">$40</p>
+                            <p class="doglist-prices-real">$25</p>
+                        </div>
+                        <button class="doglist-button-buy">Buy Now</button>
+                    </div>
+
+                    <div class="doglist-content-item">
+                        <img src="images/doglist/newproject_doglist3.jpg" alt="newproject_doglist3.jpg" class="doglist-img">
+                        <div class="doglist-prices">
+                            <p class="doglist-prices-old">$45</p>
+                            <p class="doglist-prices-real">$20</p>
+                        </div>
+                        <button class="doglist-button-buy">Buy Now</button>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION DOGLIST -->
+
+
+        <section class="team"> <!-- SECTION TEAM -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="team-information">
+                    <h1 class="team-title">The vetcare team</h1>
+                    <h2 class="team-text">Lorem Ipsum available, but the majority have suffered alteration in some form.</h2>
+                </div>
+
+                <div class="team-content">
+                    <div class="team-content-item">
+                        <img src="images/team/newproject_teamlist1.jpg" alt="newproject_teamlist1.jpg" class="team-img">
+                        <div class="team-worker">
+                            <p class="team-worker-name">Jennifer Mullen</p>
+                            <p class="team-worker-profession">VETERINARY</p>
+                        </div>
+                        <div class="team-socialnetworks">
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#instagram"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#facebook"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#twitter"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#whatsapp"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="team-content-item">
+                        <img src="images/team/newproject_teamlist2.jpg" alt="newproject_teamlist2.jpg" class="team-img">
+                        <div class="team-worker">
+                            <p class="team-worker-name">Sheeren Collins</p>
+                            <p class="team-worker-profession">ADMINISTRATION</p>
+                        </div>
+                        <div class="team-socialnetworks">
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#instagram"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#facebook"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#twitter"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#whatsapp"></use></svg></a>
+                        </div>
+                    </div>
+
+                    <div class="team-content-item">
+                        <img src="images/team/newproject_teamlist3.jpg" alt="newproject_teamlist3.jpg" class="team-img">
+                        <div class="team-worker">
+                            <p class="team-worker-name">Jennifer Mullen</p>
+                            <p class="team-worker-profession">VETERINARY</p>
+                        </div>
+                        <div class="team-socialnetworks">
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#instagram"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#facebook"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#twitter"></use></svg></a>
+                            <a href="#" class="socialnetworks_item" target="_blank"><svg class="socialnetworks_item_icon"><use xlink:href="#whatsapp"></use></svg></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION TEAM -->
+
+
+        <section class="numbers"> <!-- SECTION NUMBERS -->
+            <div class="container"> <!-- CONTAINER -->
+                <div class="orange-square"></div>
+                <div class="numbers-content">
+                    <div class="numbers-content-item">
+                        <img src="icons/numbers/newproject_icon_numbers1.png" alt="" class="numbers-content-item-image">
+                        <div class="numbers-content-item-info">
+                            <p class="numbers-content-item-info-number">+34793</p>
+                            <h3 class="numbers-content-item-info-organization">Happy Clients</h3>
+                        </div>
+                    </div>
+                    <div class="numbers-content-item">
+                        <img src="icons/numbers/newproject_icon_numbers2.png" alt="" class="numbers-content-item-image">
+                        <div class="numbers-content-item-info">
+                            <p class="numbers-content-item-info-number">+45382</p>
+                            <h3 class="numbers-content-item-info-organization">Departament</h3>
+                        </div>
+                    </div>
+                    <div class="numbers-content-item">
+                        <img src="icons/numbers/newproject_icon_numbers3.png" alt="" class="numbers-content-item-image">
+                        <div class="numbers-content-item-info">
+                            <p class="numbers-content-item-info-number">+54762</p>
+                            <h3 class="numbers-content-item-info-organization">Vaccinations</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION NUMBERS -->
+
+
+        <section class="posts"> <!-- SECTION POSTS -->
+            <div class="container"> <!-- CONTAINER -->
+
+                <div class="posts-info">
+                    <h1 class="posts-info-title">Recent Posts</h1>
+                    <h2 class="posts-info-text">Lorem Ipsum available, but the majority have suffered alteration in some form.</h2>
+                </div>
+
+                <div class="posts-content">
+                    <div class="posts-content-item">
+                        <img src="images/posts/newproject_posts1.jpg" alt="" class="posts-content-item-image">
+                        <div class="posts-content-item-info">
+                            <div class="posts-content-item-info-titleanddate">
+                                <h3 class="posts-content-item-info-titleanddate-title">As a veterinarian and lover of animals</h3>
+                                <h4 class="posts-content-item-info-titleanddate-date">FEBRUARY 09, 2020</h4>
+                            </div>
+
+                            <p class="posts-content-item-info-description">Lorem Ipsum available, but the majo rity have suffered alteration in some words which look.</p>
+                            <h4 class="posts-content-item-info-more">Read More+</h4>
+                        </div>
+                    </div>
+
+                    <div class="posts-content-item">
+                        <img src="images/posts/newproject_posts2.jpg" alt="" class="posts-content-item-image">
+                        <div class="posts-content-item-info">
+                            <div class="posts-content-item-info-titleanddate">
+                                <h3 class="posts-content-item-info-titleanddate-title">As a veterinarian and lover of animals</h3>
+                                <h4 class="posts-content-item-info-titleanddate-date">FEBRUARY 09, 2020</h4>
+                            </div>
+
+                            <p class="posts-content-item-info-description">Lorem Ipsum available, but the majo rity have suffered alteration in some words which look.</p>
+                            <h4 class="posts-content-item-info-more">Read More+</h4>
+                        </div>
+                    </div>
+
+                    <div class="posts-content-item">
+                        <img src="images/posts/newproject_posts3.jpg" alt="" class="posts-content-item-image">
+                        <div class="posts-content-item-info">
+                            <div class="posts-content-item-info-titleanddate">
+                                <h3 class="posts-content-item-info-titleanddate-title">As a veterinarian and lover of animals</h3>
+                                <h4 class="posts-content-item-info-titleanddate-date">FEBRUARY 09, 2020</h4>
+                            </div>
+
+                            <p class="posts-content-item-info-description">Lorem Ipsum available, but the majo rity have suffered alteration in some words which look.</p>
+                            <h4 class="posts-content-item-info-more">Read More+</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- CONTAINER -->
+        </section> <!-- SECTION POSTS -->
+
+    </main>
+    <!-- MAIN -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+                <div class="footer-content-item">
+                    <h4 class="footer-content-item-title">About</h4>
+                    <nav class="footer-content-item-navbar">
+                        <ul class="footer-content-item-navbar-menu">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Brand Guidelines</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-content-item">
+                    <h4 class="footer-content-item-title">Services</h4>
+                    <nav class="footer-content-item-navbar">
+                        <ul class="footer-content-item-navbar-menu">
+                            <li><a href="#">How to Order</a></li>
+                            <li><a href="#">Our Product</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Promo</a></li>
+                            <li><a href="#">Payment Method</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-content-item">
+                    <div class="footer-content-info">
+                        <h4 class="footer-content-item-info-title">Services</h4>
+                        <h5 class="footer-content-item-info-subtitle">Lorem Ipsum available, but the majorit </h5>
+                    </div>
+                    <form action="" class="footer-content-item-form">
+                        <input class="footer-content-item-form-msg" type="email" placeholder="Send message..."></input>
+                        <button class="footer-content-item-form-msgbtn" type="submit"><svg class="footer-content-item-form-msgbtn-icon"><use xlink:href="#message"></use></svg></button>
+                    </form>
+                    <div class="footer-content-item-socialnetworks">
+                        <a href="#" class="footer-socialnetworks_item" target="_blank"><svg class="footer-socialnetworks_item_icon"><use xlink:href="#instagram"></use></svg></a>
+                        <a href="#" class="footer-socialnetworks_item" target="_blank"><svg class="footer-socialnetworks_item_icon"><use xlink:href="#facebook"></use></svg></a>
+                        <a href="#" class="footer-socialnetworks_item" target="_blank"><svg class="footer-socialnetworks_item_icon"><use xlink:href="#twitter"></use></svg></a>
+                        <a href="#" class="footer-socialnetworks_item" target="_blank"><svg class="footer-socialnetworks_item_icon"><use xlink:href="#whatsapp"></use></svg></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+</body>
+</html>
